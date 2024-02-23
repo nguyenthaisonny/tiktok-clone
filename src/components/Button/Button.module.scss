@@ -1,0 +1,80 @@
+.wrapper {
+    display: inline-flex;
+    align-items: center;
+    font-family: 'TiktokFont', 'san-serif';
+    font-size: 1.6rem;
+    font-weight: 700;
+    min-width: 100px;
+    padding: 9px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: var(--white);
+    border: 1px solid transparent;
+    user-select: none;
+    justify-content: center;
+    + .wrapper {
+        margin-left: 6px;
+    }
+    &.disabled {
+        cursor: none;
+        opacity: 0.5;
+    }
+}
+.icon + .title,
+.title + .icon {
+    margin-left: 8px;
+}
+.icon {
+    display: inline-block;
+    width: 24px;
+    text-align: center;
+}
+// button types
+.rounded {
+    border: 1px solid rgba(22, 24, 35, 0.12);
+    border-radius: 999px;
+    color: rgba(22, 24, 35, 0.75);
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 8px;
+    &:hover {
+        border-color: rgba(22, 24, 35, 0.2);
+        background-color: rgba(22, 24, 35, 0.06);
+    }
+}
+
+.primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-color: var(--primary-color);
+
+    &:hover {
+        border-color: var(--primary-color);
+        background-color: rgba(234, 40, 78, 1);
+    }
+}
+.text {
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.outline {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    &:hover {
+        border-color: var(--primary-color);
+        background-color: rgba(254, 44, 85, 0.08);
+    }
+}
+.square {
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+// button size
+.small {
+    min-width: 88px;
+    padding: 4px 16px;
+}
+.large {
+    min-width: 148px;
+    padding: 14px 16px;
+}
