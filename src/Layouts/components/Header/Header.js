@@ -28,7 +28,7 @@ import config from '~/components/config';
 const cx = classNames.bind(styles);
 function Header() {
     // const [state, setCurrentUser] = useStore();
-    const currentUser = false;
+    const currentUser = true;
     const MENU_ITEMS = [
         {
             icon: <FontAwesomeIcon icon={faEarthAsia} />,

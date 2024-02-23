@@ -50,6 +50,7 @@ function Search() {
         }
     };
     const handleSubmit = (e) => {};
+    console.log(searchResult.length);
     return (
         //handle warning tippy
         <div>
